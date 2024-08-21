@@ -18,7 +18,7 @@ const InfoSection = ({ trip }) => {
     const result = await GetPlacesDetails(data).then((resp) => {
       const PhotoUrl = PHOTO_REF_URL.replace(
         "{NAME}",
-        resp.data.places[0].photos[4].name
+        resp.data.places[0].photos[1].name
       );
       setPhotoUrl(PhotoUrl);
     });
